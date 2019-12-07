@@ -14,6 +14,6 @@ pub use writer::{
 };
 
 pub async fn run() -> Result<()> {
-    Log::create("hello").await?;
+    Log::ensure("./out/hello").await?;
     Ok(())
 }
